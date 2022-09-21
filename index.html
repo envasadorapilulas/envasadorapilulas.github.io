@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envasadora de Pilulas</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Estilo css -->
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <img src="img/logo.png" class="logo" alt="Logo da documentação">
+            <div class="navegacao">
+                <ul>
+                    <li><a href="#sobre" onclick="esconderMenu()">Sobre</a></li>
+                    <li><a href="#pagina" onclick="esconderMenu()">Paginas</a></li>
+                    <li><a href="#finalidade" onclick="esconderMenu()">Finalidade do Projeto</a></li>
+                    <li><a href="#componente" onclick="esconderMenu()">Componentes</a></li>
+                    <li><a href="#simulação" onclick="esconderMenu()">Simulação Discreta</a></li>
+                    <li><a href="#montagem" onclick="esconderMenu()">Montagem</a></li>
+                    <li><a href="#autor" onclick="esconderMenu()">Membros</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- sidebar -->
+
+        <div class="conteudo-site">
+            <a href="#" class="menu" onclick="menu()" id="menu"><img src="img/menu.svg" alt="Botão menu do site"></a>
+            <h1>Documentação</h1>
+            <hr class="linha-divisoria">
+            <!-- Seção sobre -->
+            <section id="sobre">
+                <h2>SOBRE O HOMECARE</h2>
+                <hr class="linha-divisoria">
+                <p>O cuidado domiciliar (home care) é um modelo de cuidar com a finalidade de evitar o aumento a demanda da rede pública de saúde. O trabalho deve ser realizado por uma equipe multiprofissional composto por médicos, enfermeiros, fisioterapeutas,
+                    terapeuta operacional e etc., como conhecimento crítico e científico para promover qualidade de vida.
+                </p>
+                <p>
+                    Além disso, a praticidade do home care é aplicação e administração de medicamentos que o tratamento de determinadas patologias ocorre por terapia medicamentosa e o serviço é benéfico para idosos e pessoas que são incapazes em coordenar as medicações,
+                    ou familiares que não tem prática no procedimento. O uso de medicamentos tem sido uma parte crucial na recuperação do paciente e sua aplicação deve ser realizada por um profissional capacitado, porém muitas vezes o profissional capacitado
+                    pode errar na dosagem do medicamento levando o risco de morte do paciente ou ter efeitos colaterais que podem piorar o quadro paciente.
+                </p>
+
+                <div class="paginas" id="pagina">
+                    <h3>PAGINAS</h3>
+                    <hr class="linha-divisoria">
+                    <ul>
+                        <li><a href="https://jvmartinsc.github.io/" target="_blank ">Contato do João Vitor</a></li>
+                        <li><a href="https://dioic3.github.io/" target="_blank ">Contato da Joyce da Costa</a></li>
+                        <li><a href="https://mayaavitch.github.io/" target="_blank ">Contato da Maya Abramovitch</a></li>
+                    </ul>
+                </div>
+
+                <div class="estrutura" id="finalidade">
+                    <h3>FINALIDADE DO PROJETO</h3>
+                    <hr class="linha-divisoria ">
+                    <p>
+                        A envasadora de pilulas tem a finalidade de colaborar com o profissional de saúde na organização e condução do tipo e quantidades dos medicamentos que estão sendo utilizados no atual momento. Dessa maneira, o projeto tem o objetivo de separar, contar
+                        e armazenar corretamente as pilulas de um modo mais rápido e eficiente. Pode-se classificar o funcionamento da seguinte forma:
+                    </p>
+                    <p>
+                        1. Recebe as pílulas por um compartimento na parte superior da envasadora.
+                    </p>
+                    <p>
+                        2. Separa as pílulas atrás de um disco cônico que faz movimento circular onde força as pílulas para as bordas do disco.
+                    </p>
+                    <p>
+                        3. Faz o alinhamento dos comprimidos através de uma peça de ajust manual para o tamanho dos comprimidos.
+                    </p>
+                    <p>
+                        4. Encaminha os medicamentos para a esteira, que depois os encaminha ao contador.
+                    </p>
+                    <p>
+                        5. Dispensa as pílulas contadas por um tubo em direção aos potes.
+                    </p>
+                    <p>
+                        6. Ao preencher o númeor estabelecido pelo usuário de pílulas, o sistema fazer três processos: Zerar a contagem de pílulas no sensor, parar esteira cônica e girar a esteira dos potes.
+                    </p>
+                    <img class="image" src="img/circuito-3d.jpeg" alt="Exemplo do circuito simulado">
+                </div>
+
+                <div class="componentes" id="componente">
+                    <h3>COMPONENENTES</h3>
+                    <hr class="linha-divisoria ">
+                    <ul>
+                        <table>
+                            <tr>
+                                <th>
+                                    Componentes
+                                </th>
+                                <th>
+                                    Função
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Proto Prata
+                                </th>
+                                <th>comportar os componentes que formam o circuito.</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Motor DC 130 3-6V
+                                </th>
+                                <th>Movimentar plataformas em esteira circular para movimentar as pílulas e trocar os potes.</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Relé de Potência 15A 24VDC
+                                </th>
+                                <th>Aciona os motores</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Bateria 9V
+                                </th>
+                                <th>Energizar os relés e os motores DC</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    PowerBank
+                                </th>
+                                <th>Energizar o Arduino DC</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Transistore NPN(BJT)
+                                </th>
+                                <th>Chavear o comando do arduino para o relé</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Push Button
+                                </th>
+                                <th>Controle do display</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Display LCD 16x2
+                                </th>
+                                <th>Mostrar dados de saída e controle de quantidade.</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Potenciômetro
+                                </th>
+                                <th>Controla o brilho da tela</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Diodos
+                                </th>
+                                <th>Controle de corrente</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Resistores 10k ohms
+                                </th>
+                                <th>Controle de tensão nos transistores</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Resistor de 220 ohms
+                                </th>
+                                <th>Controle de tensão no display</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Kit de Jumpers
+                                </th>
+                                <th>Serve para ligações</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Módulo Sensor Magnético Reed Switch
+                                </th>
+                                <th>Ler a esteira circular dos potes</th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Kit de Imas
+                                </th>
+                                <th>Gerar campo magnético para ser lido no Reed Switch</th>
+                            </tr>
+                        </table>
+                    </ul>
+                </div>
+            </section>
+            <section id="simulação">
+                <h2>Simulação Discreta</h2>
+                <hr class="linha-divisoria">
+                <p>O usuário coloca os potes vazios na esteira circular e liga a máquina com o interruptor na lateral da máquina. O display acende na tela de seleção de quantas pílulas se deseja em cada pote.
+                </p>
+                <p>
+                    Além disso, é visualizado os botões no display onde são 3 botões nas laterais sendo classificado por seleção e meio para o controle, assim pode dar as funções como parar a máquina ou voltar para o menu de seleção. O botão de seleção na direita serve para
+                    subir o número de pílulas para 15 e confirma como o apertar do botão do meio.
+                </p>
+                <p>
+                    A esteira circular cônica começa a girar e o usuário ajusta o separador mecânico e coloca as pílulas pela escotilha superior da máquina. Dessa maneira, as pílulas caem na máquina para que comecem a ser separadas pela esteira cônica e passem para o corredor
+                    onde elas passam pelo sensor e vão sendo contadas, depois caem no pote vazio enquanto no display é mostrado o número de pílulas que já passaram pelo sensor. Depois que o primeiro atingir o número máximo, sendo 15 pílulas. A esteira
+                    cônica deve parar e a esteira circular dos potes deve ser mover para o próximo pote vazio e o usuário retira o primeiro pote preenchido para conferir o resultado.
+                </p>
+            </section>
+            <!-- Seção requistos -->
+
+            <!-- Seção instalação -->
+            <section id="montagem">
+                <h2>MONTAGEM</h2>
+                <hr class="linha-divisoria ">
+                <figure>
+                    <video controls="controls" autoplay="autoplay">
+                        <source src="video/animação.mp4" type="video/mp4">
+                        <object data="">
+                            <embed src="video/animação.mp4">
+                        </object>
+                    </video>
+                </figure>
+            </section>
+            <!-- Seção instalação -->
+
+            <!-- Seção autores -->
+            <section id="autor">
+                <h2>Membros do Time 4</h2>
+                <hr class="linha-divisoria">
+                <ul>
+                    <div class="container">
+                        <main class="grid">
+                            <article>
+                                <img src="img/joyce.jpeg" alt="">
+                                <div class="text">
+                                    <h3>Joyce da Costa</h3>
+                                    <p>Engenharia de Computação</p>
+                                    <a href="https://www.linkedin.com/in/joyce-dacosta/">
+                                        <button>About more</button>
+                                    </a>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="img/jv.jpeg" alt="">
+                                <div class="text">
+                                    <h3>João Vitor</h3>
+                                    <p>Engenharia de Biomédica</p>
+                                    <a href="https://www.linkedin.com/in/jvmartinsc/">
+                                        <button>About more</button>
+                                    </a>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="img/maya.jpeg" alt="">
+                                <div class="text">
+                                    <h3>Maya Abramovitch</h3>
+                                    <p>Engenharia de Biomédica</p>
+                                    <a href="https://www.linkedin.com/in/maya-abramovitch/">
+                                        <button>About more</button>
+                                    </a>
+                                </div>
+                            </article>
+                        </main>
+                    </div>
+                </ul>
+            </section>
+            <!-- Seção autores -->
+
+            <!-- Seta -->
+            <a href="#menu " class="seta-up ">
+                <img src="img/seta.png " alt="Subir para o topo ">
+            </a>
+            <!-- Seta -->
+
+        </div>
+
+    </div>
+
+    <script>
+        function menu() {
+            var conteudoSite = document.querySelector('.conteudo-site')
+            var sidebar = document.querySelector('.sidebar')
+
+            sidebar.classList.toggle('active')
+            conteudoSite.classList.toggle('active')
+        }
+
+        function esconderMenu() {
+            var tamanhoTela = window.innerWidth;
+
+            if (tamanhoTela < "600 ") {
+                var sidebar = document.querySelector('.sidebar')
+                var conteudoSite = document.querySelector('.conteudo-site')
+
+                sidebar.classList.remove('active')
+                conteudoSite.classList.remove('active')
+            }
+        }
+    </script>
+
+</body>
+
+</html>

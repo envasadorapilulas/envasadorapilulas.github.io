@@ -1,0 +1,849 @@
+/* geral */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: .8em;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.codigo-marcado {
+    max-width: 1366px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #635A5A;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    border-left: 12px solid #3949AB;
+}
+
+.seta-up {
+    padding: 10px;
+    background: #3949AB;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    z-index: 80;
+}
+
+.seta-up img {
+    width: 30px;
+}
+
+
+/* geral */
+
+
+/* Sidebar */
+
+.logo {
+    width: 200px;
+}
+
+.sidebar {
+    width: 320px;
+    position: fixed;
+    display: inline-block;
+    background: #3949AB;
+    min-height: 100vh;
+    text-align: center;
+    box-sizing: border-box;
+    transition: 0.5s;
+    overflow-x: hidden;
+}
+
+.sidebar.active {
+    width: 12px;
+}
+
+.navegacao {
+    width: 100%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navegacao ul {
+    padding-top: 40px;
+}
+
+.navegacao ul li {
+    line-height: 70px;
+    text-align: left;
+    list-style: none;
+}
+
+.navegacao ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    padding: 5px 12px;
+    white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.navegacao ul li a:hover {
+    color: #635A5A;
+}
+
+
+/* Sidebar */
+
+
+/* Conteudo do site  */
+
+.conteudo-site {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 180px);
+    margin-left: 350px;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.conteudo-site.active {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.menu {
+    padding: 10px;
+    cursor: pointer;
+    margin: 0;
+    display: inline-block;
+}
+
+.conteudo-site h1 {
+    margin-top: 50px;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.conteudo-site .linha-divisoria {
+    height: 4px;
+    background: #000000;
+}
+
+
+/* Seção sobre */
+
+#sobre {
+    margin-top: 60px;
+}
+
+#sobre h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+#sobre .linha-divisoria {
+    width: 100px;
+}
+
+#sobre p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+/* PAGINAS */
+
+#sobre .paginas {
+    margin-top: 40px;
+}
+
+#sobre .paginas .linha-divisoria {
+    width: 100px;
+}
+
+#sobre .paginas h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+#sobre .paginas ul {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#sobre .paginas ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+/* PAGINAS */
+
+
+/* ESTRUTURAS */
+
+#sobre .estrutura {
+    margin-top: 40px;
+}
+
+#sobre .estrutura .linha-divisoria {
+    width: 250px;
+}
+
+#sobre .estrutura .image {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+    border: 4px solid rgb(234, 234, 234);
+    box-shadow: 5px 4px rgba(36, 36, 36, 0.182)
+}
+
+#sobre .estrutura h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+#sobre .estrutura img {
+    display: block;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+
+/* ESTRUTURAS */
+
+
+/* TECNOLOGIA */
+
+#sobre .componentes {
+    margin-top: 40px;
+}
+
+#sobre .componentes .linha-divisoria {
+    width: 150px;
+}
+
+#sobre .componentes h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#sobre .componentes ul {
+    padding-left: 0.5px;
+    padding-top: 0.5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+table,
+td,
+th {
+    border: 1px solid rgb(0, 136, 221);
+    text-align: left;
+}
+
+#sobre .componentes ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0.5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+/* TECNOLOGIA */
+
+
+/* Seção sobre */
+
+
+/* Seção requisitos */
+
+#simulação {
+    margin-top: 50px;
+}
+
+#simulação .linha-divisoria {
+    width: 255px;
+}
+
+#simulação h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+#simulação p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+/* Seção requisitos */
+
+
+/* Seção instalação */
+
+#montagem {
+    margin-top: 100px;
+}
+
+#montagem .linha-divisoria {
+    width: 150px;
+}
+
+#montagem h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+#montagem p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+#montagem figure {
+    width: 90%;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+#montagem video {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Seção instalação */
+
+
+/* Seção biblioteca */
+
+#fatos {
+    margin-top: 50px;
+}
+
+#fatos .linha-divisoria {
+    width: 150px;
+}
+
+#fatos h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+#fatos p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#fatos ul {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#fatos ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+/* Seção biblioteca */
+
+
+/* Seção autor */
+
+#autor {
+    margin-top: 100px;
+}
+
+#autor .linha-divisoria {
+    width: 120px;
+}
+
+#autor h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+#autor p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#autor ul {
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+#autor ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#autor .grid {
+    margin: 80px 1fr;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+}
+
+#autor .grid>article {
+    background: rgb(234, 234, 234);
+    border: none;
+    box-shadow: 2px 2px 6px 0px rgba(36, 36, 36, 0.182);
+    border-radius: 50px;
+    text-align: center;
+    width: 350px;
+    transition: transform .3s;
+}
+
+#autor .grid>article:hover {
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgba(36, 36, 36, 0.182);
+}
+
+#autor .grid>article img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#autor .text {
+    padding: 0 50px 50px;
+}
+
+#autor .text h3 {
+    text-transform: uppercase;
+}
+
+#autor .text button {
+    background: rgb(0, 136, 221);
+    border-radius: 250px;
+    border: none;
+    color: #000;
+    padding: 10px;
+    width: 100%;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+/* Seção autor */
+
+
+/* Seção observacao */
+
+#observacao {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#observacao .linha-divisoria {
+    width: 180px;
+}
+
+#observacao h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+#observacao p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+/* Seção autor */
+
+
+/* Media querys */
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 1152px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 992px) {
+    #sobre p {
+        font-size: 16px;
+    }
+    #requisitos p {
+        font-size: 16px;
+    }
+    #instalacao p {
+        font-size: 16px;
+    }
+    #biblioteca p {
+        font-size: 16px;
+    }
+    #autor p {
+        font-size: 16px;
+    }
+    #observacao p {
+        font-size: 16px;
+    }
+    .sidebar {
+        width: 12px;
+    }
+    .sidebar.active {
+        width: 350px;
+    }
+    .conteudo-site.active {
+        width: calc(100% - 180px);
+        margin-left: 350px;
+    }
+    .conteudo-site {
+        width: 100%;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 868px) {}
+
+@media screen and (max-width: 768px) {
+    #autor .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .conteudo-site h1 {
+        margin-top: 40px;
+        font-size: 30px;
+    }
+    #sobre h2 {
+        font-size: 20px;
+    }
+    #requisitos h2 {
+        font-size: 20px;
+    }
+    #instalacao h2 {
+        font-size: 20px;
+    }
+    #biblioteca h2 {
+        font-size: 20px;
+    }
+    #autor h2 {
+        font-size: 20px;
+    }
+    #observacao h2 {
+        font-size: 20px;
+    }
+    .navegacao ul li a {
+        font-size: 22px;
+    }
+    .codigo-marcado {
+        font-size: 17px;
+    }
+    #sobre .paginas ul li a {
+        font-size: 17px;
+    }
+    #sobre .tecnologia ul li a {
+        font-size: 17px;
+    }
+    #requisitos ul li a {
+        font-size: 17px;
+    }
+    #biblioteca ul li a {
+        font-size: 17px;
+    }
+    #autor ul li a {
+        font-size: 17px;
+    }
+    #sobre .paginas h3 {
+        font-size: 17px;
+    }
+    #sobre .estrutura h3 {
+        font-size: 17px;
+    }
+    #sobre .tecnologia h3 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #autor .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #autor .grid>article {
+        text-align: center;
+    }
+    .sidebar.active {
+        width: 100%;
+        z-index: 100;
+    }
+    .conteudo-site.active .menu {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 120;
+    }
+    .conteudo-site.active {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .seta-up {
+        width: 40px;
+        height: 40px;
+    }
+    .seta-up img {
+        width: 20px;
+    }
+    .navegacao ul li {
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #sobre p {
+        font-size: 13px;
+    }
+    #requisitos p {
+        font-size: 13px;
+    }
+    #instalacao p {
+        font-size: 13px;
+    }
+    #biblioteca p {
+        font-size: 13px;
+    }
+    #autor p {
+        font-size: 13px;
+    }
+    #observacao p {
+        font-size: 13px;
+    }
+    .conteudo-site h1 {
+        margin-top: 30px;
+        font-size: 28px;
+    }
+    #sobre h2 {
+        font-size: 18px;
+    }
+    #requisitos h2 {
+        font-size: 18px;
+    }
+    #instalacao h2 {
+        font-size: 18px;
+    }
+    #biblioteca h2 {
+        font-size: 18px;
+    }
+    #autor h2 {
+        font-size: 18px;
+    }
+    #observacao h2 {
+        font-size: 18px;
+    }
+    .navegacao ul li a {
+        font-size: 16px;
+    }
+    .codigo-marcado {
+        font-size: 16px;
+    }
+    #sobre .paginas ul li a {
+        font-size: 16px;
+    }
+    #sobre .tecnologia ul li a {
+        font-size: 16px;
+    }
+    #requisitos ul li a {
+        font-size: 16px;
+    }
+    #biblioteca ul li a {
+        font-size: 16px;
+    }
+    #autor ul li a {
+        font-size: 16px;
+    }
+    #sobre .paginas h3 {
+        font-size: 16px;
+    }
+    #sobre .estrutura h3 {
+        font-size: 16px;
+    }
+    #sobre .tecnologia h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 360px) {
+    #sobre p {
+        font-size: 12px;
+    }
+    #requisitos p {
+        font-size: 12px;
+    }
+    #instalacao p {
+        font-size: 12px;
+    }
+    #biblioteca p {
+        font-size: 12px;
+    }
+    #autor p {
+        font-size: 12px;
+    }
+    #observacao p {
+        font-size: 12px;
+    }
+    .conteudo-site h1 {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    #sobre h2 {
+        font-size: 16px;
+    }
+    #requisitos h2 {
+        font-size: 16px;
+    }
+    #instalacao h2 {
+        font-size: 16px;
+    }
+    #biblioteca h2 {
+        font-size: 16px;
+    }
+    #autor h2 {
+        font-size: 16px;
+    }
+    #observacao h2 {
+        font-size: 16px;
+    }
+    .navegacao ul li a {
+        font-size: 14px;
+    }
+    .codigo-marcado {
+        font-size: 12px;
+    }
+    #sobre .paginas ul li a {
+        font-size: 14px;
+    }
+    #sobre .tecnologia ul li a {
+        font-size: 14px;
+    }
+    #requisitos ul li a {
+        font-size: 14px;
+    }
+    #biblioteca ul li a {
+        font-size: 14px;
+    }
+    #autor ul li a {
+        font-size: 14px;
+    }
+    #sobre .paginas h3 {
+        font-size: 15px;
+    }
+    #sobre .estrutura h3 {
+        font-size: 15px;
+    }
+    #sobre .tecnologia h3 {
+        font-size: 15px;
+    }
+    #sobre {
+        margin-top: 30px;
+    }
+    #requisitos {
+        margin-top: 50px;
+    }
+    #instalacao {
+        margin-top: 50px;
+    }
+    #biblioteca {
+        margin-top: 50px;
+    }
+    #autor {
+        margin-top: 50px;
+    }
+    #observacao {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .logo {
+        width: 160px;
+        margin-top: 30px;
+    }
+    .navegacao ul {
+        padding-top: 10px;
+    }
+    .navegacao ul li {
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 280px) {}
